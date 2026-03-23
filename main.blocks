@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="device_forever" id="7[E1FT]U$v~oDc;NFY(-" x="0" y="0"><statement name="HANDLER"><block type="controls_if" id="jw|yN,B6lKzFoS/~Cc:v"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="c;FM+ibCL1CuQa8H/+?w"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id=":}ijaM6^d+[@FPR62U={"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="T~Vfj6akRZJk(~?;Xipe"><field name="NUM">0</field></shadow><block type="maqueenPlusV2_readLineSensorState" id="Pi2!Spt~EQNaHbI6/xqg"><field name="eline">maqueenPlusV2.MyEnumLineSensor.SensorL1</field></block></value><value name="B"><shadow type="math_number" id="{F+uYOewYKvNU-;Ku$4H"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="maqueenPlusV2_controlMotor" id="Ik#~)?NIPWL,FK}cPxul"><field name="emotor">maqueenPlusV2.MyEnumMotor.RightMotor</field><field name="edir">maqueenPlusV2.MyEnumDir.Forward</field><value name="speed"><shadow type="math_number_minmax" id="I3}8-V(lVYEZ4;KJWyWn"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">85</field></shadow></value><next><block type="maqueenPlusV2_controlMotor" id="xLB_*Nj]4H4Wz8!~;nqv"><field name="emotor">maqueenPlusV2.MyEnumMotor.LeftMotor</field><field name="edir">maqueenPlusV2.MyEnumDir.Forward</field><value name="speed"><shadow type="math_number_minmax" id="=*%ihIjgE78]QD,V!,{T"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">75</field></shadow></value><next><block type="device_show_leds" id="3M17^gCdkBYF}@Ii:#bc"><field name="LEDS">`
+        . . # . . 
+        . . . # . 
+        # # # # # 
+        . . . # . 
+        . . # . .
+        `</field></block></next></block></next></block></statement><statement name="ELSE"><block type="controls_if" id="6R|onVeo2rtZEvE1K+ys"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="bQ4VI_F]*yRx;-+YnnfA"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="P/A6`f).`g|]h=vOmFS{"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="z$mz8bF9Q4Njs$FG(%M-"><field name="NUM">0</field></shadow><block type="maqueenPlusV2_readLineSensorState" id="!6GdE2IH?b%h[;;#XB^w"><field name="eline">maqueenPlusV2.MyEnumLineSensor.SensorR1</field></block></value><value name="B"><shadow type="math_number" id="81~i05//,AG}.=tN%G1^"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="maqueenPlusV2_controlMotor" id="E9fJyfomQl4eMQz^Yn0C"><field name="emotor">maqueenPlusV2.MyEnumMotor.RightMotor</field><field name="edir">maqueenPlusV2.MyEnumDir.Forward</field><value name="speed"><shadow type="math_number_minmax" id="G%Gj7ymdL*r,XDXX-_3L"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">85</field></shadow></value><next><block type="maqueenPlusV2_controlMotor" id=".2l$OR,d?UJmG:`BJnhA"><field name="emotor">maqueenPlusV2.MyEnumMotor.LeftMotor</field><field name="edir">maqueenPlusV2.MyEnumDir.Forward</field><value name="speed"><shadow type="math_number_minmax" id="}xta0kv=(=h82h@}C)rd"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">75</field></shadow></value><next><block type="device_show_leds" id="lY,Jx.H~.A0jEv9ywYaA"><field name="LEDS">`
+        . . # . . 
+        . # . . . 
+        # # # # # 
+        . # . . . 
+        . . # . .
+        `</field></block></next></block></next></block></statement><statement name="ELSE"><block type="maqueenPlusV2_controlMotor" id="4F:JGwM7Lzt:D(@]OD!|"><field name="emotor">maqueenPlusV2.MyEnumMotor.AllMotor</field><field name="edir">maqueenPlusV2.MyEnumDir.Forward</field><value name="speed"><shadow type="math_number_minmax" id=";))aFD/:1oCz5mmuBf74"><mutation min="0" max="255" label="Speed" precision="0"></mutation><field name="SLIDER">85</field></shadow></value><next><block type="device_show_leds" id="ab$NDvk_(.L%d^o~Fv7!"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # . # . # 
+        . . # . . 
+        . . # . .
+        `</field></block></next></block></statement></block></statement></block></statement></block><block type="pxt-on-start" id="r|*-.JK|S$gn-1`5@3rQ" x="562" y="235"><statement name="HANDLER"><block type="maqueenPlusV2_I2CInit" id="{[VEu*r1|[3LCjr`xEb."><next><block type="device_show_leds" id="8*GMY/m7vtP0}v]5Fp[S"><field name="LEDS">`
+        # . . . # 
+        . . . # . 
+        . # # . # 
+        . # . # # 
+        . . # # .
+        `</field></block></next></block></statement></block></xml>
